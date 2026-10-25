@@ -1,0 +1,13 @@
+kpi_id,kpi,definition,primary_data,direction,tier2_drivers
+T1-01,End-to-end time to fill,Median business days from approved requisition to candidate joining; also report mean and P90,Requisition log + joined application,Lower is better,"T2-01, T2-02, T2-03, T2-04, T2-05, T2-06"
+T1-02,Requisition approval lead time,Median business time from requisition submission to final approval,Requisition log,Lower is better,"T2-01, T2-02, T2-07"
+T1-03,Recruitment stage SLA attainment,Completed in-scope stage transitions within applicable SLA / all eligible completed transitions,Both logs,Higher is better,"T2-02, T2-03, T2-04, T2-05, T2-06, T2-07"
+T1-04,Waiting-time share,Measured waiting time / measured total elapsed time for eligible cases,Both logs,Lower is generally better,"T2-03, T2-04, T2-05, T2-06, T2-07"
+T1-05,Candidate conversion rate,"Candidates reaching defined milestone / eligible candidates entering prior milestone, by cohort",Application log,"Higher may be better, interpreted by stage and quality","T2-08, T2-09, T2-10, T2-11"
+T1-06,Offer acceptance rate,"Offers accepted / offers with a final response, with expired/pending separated",Application log,Higher is generally better,"T2-12, T2-13, T2-14"
+T1-07,Offer-to-join conversion,Candidates joined / accepted offers eligible to have reached joining date,Application log + HRIS,Higher is better,"T2-14, T2-15, T2-16"
+T1-08,Candidate withdrawal rate,"Withdrawn applications / eligible applications, segmented by stage and cohort",Application log,Lower is generally better; context required,"T2-08, T2-10, T2-13, T2-14, T2-15"
+T1-09,Recruitment rework rate,Eligible cases with one or more defined rework loops / eligible cases,Both logs,Lower is better,"T2-17, T2-18, T2-19"
+T1-10,Process conformance rate,Eligible cases following required policy path and controls / eligible cases,Both logs,Higher is better,"T2-18, T2-19, T2-20, T2-21"
+T1-11,Recruiter workload / capacity pressure,"Weighted active requisition load per recruiter, adjusted for role complexity and age",Requisition log + ATS snapshots,"Balanced, not simply minimized","T2-22, T2-23, T2-24"
+T1-12,Recruitment effort / cost per hire,"Measured recruitment effort/cost for filled requisitions divided by hires, with data coverage disclosed",ATS + approved cost/effort data,Lower is better without harming quality,"T2-22, T2-23, T2-24, T2-25, T2-26"

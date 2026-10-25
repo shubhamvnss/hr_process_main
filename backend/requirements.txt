@@ -1,0 +1,7 @@
+# Root Cause API for the Talent Acquisition prototype.
+# The pipeline's own requirements (pandas, numpy) still apply for scripts 02-04.
+fastapi>=0.115
+uvicorn[standard]>=0.30
+pydantic>=2.7
+psycopg2-binary>=2.9
+openai>=1.66          # Responses API (client.responses.create) - used by root_cause_agent.py

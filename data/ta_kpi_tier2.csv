@@ -1,0 +1,27 @@
+kpi_id,diagnostic_kpi,definition,feeds_tier1
+T2-01,Approval queue time,Time from requisition submitted to first approver action; separate total approval time,"T1-01, T1-02"
+T2-02,Stage elapsed time by stage,Median/P90 elapsed time from stage entry to stage exit,"T1-01, T1-03"
+T2-03,Waiting-time minutes by handoff,Elapsed time between outgoing event and next responsible actor's first action,"T1-01, T1-03, T1-04"
+T2-04,Time to recruiter assignment,Approval timestamp to recruiter assignment,"T1-01, T1-03, T1-04"
+T2-05,Time to first qualified shortlist,Sourcing start to first candidate meeting defined shortlist criteria,"T1-01, T1-03, T1-04"
+T2-06,Interview scheduling lead time,Interview request to confirmed interview; report rescheduling separately,"T1-01, T1-03, T1-04"
+T2-07,SLA breach frequency and severity,Count/rate of breaches and minutes beyond SLA by stage and owner group,"T1-02, T1-03"
+T2-08,Stage-to-stage candidate conversion,Candidates progressing to next stage / eligible candidates at prior stage,"T1-05, T1-08"
+T2-09,Screening turnaround time,Application received to screening decision,"T1-05, T1-08"
+T2-10,Candidate inactivity duration,"Time since last candidate-facing or internal progression event, by stage","T1-05, T1-08"
+T2-11,Assessment completion and expiry rate,"Completed / assigned; expired / assigned, cohort-adjusted",T1-05
+T2-12,Offer decision turnaround,Offer sent to accepted/declined/expired response; pending reported separately,T1-06
+T2-13,Offer revision / negotiation rate,Offers with one or more revisions or negotiation events / offers sent,"T1-06, T1-08"
+T2-14,Offer approval cycle and rework,Proposal created to final approval; number of returns/revisions,"T1-06, T1-07, T1-08"
+T2-15,Pre-joining completion time,Offer acceptance to completion of required pre-joining steps,"T1-07, T1-08"
+T2-16,Accepted-offer no-show / non-joining rate,Accepted offers not resulting in joining among eligible mature cohort,T1-07
+T2-17,Rework loop count,Count of transitions back to a previously completed activity/stage per case,T1-09
+T2-18,Repeated approval / incomplete submission rate,Cases returned or resubmitted due to missing or incorrect information,"T1-09, T1-10"
+T2-19,Interview feedback lateness / incompleteness,Feedback submitted after policy SLA or returned for missing fields,"T1-09, T1-10"
+T2-20,Mandatory control completion rate,Eligible cases with all required approvals/checks evidenced,T1-10
+T2-21,Process path deviation rate,"Cases with non-standard path, skipped mandatory step or unauthorized transition",T1-10
+T2-22,Active requisitions per recruiter,Open requisition count and weighted load by priority/complexity/age,"T1-11, T1-12"
+T2-23,Manual touch count per case,Count of events with evidenced manual_touch_flag=true,"T1-11, T1-12"
+T2-24,Follow-up / coordination event rate,"Manual reminders, chase events or scheduling coordination per case where captured","T1-11, T1-12"
+T2-25,Measured recruitment effort per hire,Recorded recruiter/coordination hours and approved agency/assessment costs per hire,T1-12
+T2-26,Integration failure / synchronization lag,"Failed handoffs, retry count and source-to-target event delay",T1-12; may also explain T1-01/T1-03

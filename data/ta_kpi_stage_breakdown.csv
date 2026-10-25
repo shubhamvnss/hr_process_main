@@ -1,0 +1,11 @@
+run_id,case_type,stage_code,stage_name,stage_sequence,cases,occurrences,revisit_rate_pct,median_elapsed_days,avg_elapsed_days,p90_elapsed_days,share_of_cycle_pct,stage_sla_days,sla_breach_pct,avg_recorded_waiting_days,avg_processing_hours,avg_events,avg_manual_events,rework_events_per_case,exception_events_per_case,handoffs_per_case,gap_references,health
+2,APPLICATION,S5,5. Screening & Shortlisting,5,7235,7235,0.0,3.11,3.57,6.09,22.3,7.0,6.5,1.97,0.29,4.4,2.3,0.06,0.01,1.68,GAP-06;GAP-07;GAP-14,Healthy
+2,APPLICATION,S6,6. Interview & Assessment,6,2909,3056,4.8,12.06,12.98,22.52,34.4,15.0,34.6,5.54,3.33,11.9,4.2,0.59,0.16,9.35,GAP-08;GAP-09;GAP-10;GAP-14,Critical
+2,APPLICATION,S7,7. Selection & Decision,7,1670,1801,7.3,1.01,1.73,3.92,2.7,4.0,9.4,1.85,0.0,1.6,1.6,0.14,0.07,1.45,GAP-11;GAP-14,Healthy
+2,APPLICATION,S8,8. Offer Management,8,1314,1314,0.0,8.05,9.04,14.81,10.3,10.0,31.9,5.86,0.0,8.7,1.6,0.73,0.17,6.6,GAP-12;GAP-13;GAP-18,Critical
+2,APPLICATION,S9,9. Pre-joining & Closure,9,7189,7189,0.0,0.0,4.87,20.73,30.3,20.0,11.6,4.5,0.0,1.8,1.1,0.05,0.03,0.57,GAP-14;GAP-15,Healthy
+2,REQUISITION,S1,1. Hiring Demand,1,1200,1200,0.0,2.61,4.02,9.01,5.6,4.0,29.5,1.8,0.0,3.9,2.0,0.42,0.0,1.94,GAP-01;GAP-02,Critical
+2,REQUISITION,S2,2. Requisition & Approval,2,1200,1200,0.0,3.18,5.29,11.16,7.3,4.0,37.6,2.34,0.0,3.8,2.8,0.37,0.08,2.61,GAP-03;GAP-18,Critical
+2,REQUISITION,S3,3. Recruitment Initiation,3,1164,1164,0.0,1.87,2.49,4.79,3.4,4.0,16.3,1.51,0.0,2.4,1.4,0.36,0.0,2.0,GAP-04;GAP-17,Healthy
+2,REQUISITION,S4,4. Sourcing,4,1164,1164,0.0,67.09,62.25,109.7,83.7,45.0,70.4,0.61,0.0,1.5,0.5,0.37,0.0,1.17,GAP-05,Critical
+2,REQUISITION,S9,9. Pre-joining & Closure,9,1020,1020,0.0,0.0,0.0,0.0,0.0,3.0,0.0,0.0,0.0,1.0,0.3,0.0,0.26,0.98,,Healthy

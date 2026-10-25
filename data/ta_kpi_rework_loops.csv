@@ -1,0 +1,19 @@
+run_id,rework_loop_type,case_type,stage_code,activity_stage,cases,events,cases_pct,loops_per_affected_case,days_lost,avg_days_lost_per_affected_case,top_reason_code,gap_reference
+2,Additional Profiles Requested,REQUISITION,S4,4. Sourcing,167,196,2.0,1.17,2753.3,16.49,SHORTLIST_NOT_SUITABLE,GAP-06
+2,Interview Rescheduled,APPLICATION,S6,6. Interview & Assessment,880,1265,10.4,1.44,2109.3,2.4,PANEL_UNAVAILABLE,GAP-08
+2,Requisition Reopened,REQUISITION,S2,2. Requisition & Approval,57,57,0.7,1.0,1030.6,18.08,,GAP-18
+2,Job Description Revised,REQUISITION,S3,3. Recruitment Initiation,211,412,2.5,1.95,538.9,2.55,ROLE_CRITERIA_NOT_ALIGNED,GAP-05
+2,Document Resubmission Requested,APPLICATION,S9,9. Pre-joining & Closure,283,356,3.4,1.26,525.8,1.86,DOCUMENT_INCOMPLETE,GAP-15
+2,Sourcing Campaign Extended,REQUISITION,S4,4. Sourcing,182,237,2.2,1.3,439.5,2.42,PIPELINE_INSUFFICIENT,GAP-05
+2,Offer Negotiation Requested,APPLICATION,S8,8. Offer Management,209,227,2.5,1.09,427.2,2.04,RELOCATION_SUPPORT_REQUEST,GAP-13
+2,Offer Approval Returned for Revision,APPLICATION,S8,8. Offer Management,224,252,2.7,1.12,374.8,1.67,OUTSIDE_APPROVED_BAND,GAP-12
+2,Application Rescreened,APPLICATION,S5,5. Screening & Shortlisting,400,400,4.7,1.0,372.2,0.93,CRITERIA_CLARIFIED,GAP-07
+2,Compensation Proposal Revised,APPLICATION,S8,8. Offer Management,224,252,2.7,1.12,367.6,1.64,,GAP-12
+2,Interview Feedback Returned for Completion,APPLICATION,S6,6. Interview & Assessment,401,430,4.8,1.07,359.2,0.9,FEEDBACK_FIELDS_INCOMPLETE,GAP-09
+2,Hiring Demand Returned for Clarification,REQUISITION,S1,1. Hiring Demand,147,249,1.7,1.69,345.9,2.35,MISSING_BUDGET_DETAIL,GAP-01
+2,Requisition Returned for Clarification,REQUISITION,S2,2. Requisition & Approval,125,196,1.5,1.57,311.0,2.49,MISSING_BUSINESS_JUSTIFICATION,GAP-03
+2,Additional Interview Round Requested,APPLICATION,S7,7. Selection & Decision,147,147,1.7,1.0,258.7,1.76,PANEL_DISAGREEMENT,GAP-11
+2,Manual Status Re-entry,APPLICATION,S0,Cross-stage (System / Governance),172,176,2.0,1.02,206.5,1.2,MANUAL_WORKAROUND,GAP-16
+2,Selection Decision Reopened,APPLICATION,S7,7. Selection & Decision,85,85,1.0,1.0,187.4,2.2,DECISION_REVISITED,GAP-11
+2,Recruiter Reassigned,REQUISITION,S3,3. Recruitment Initiation,4,4,0.0,1.0,20.4,5.1,CAPACITY_REBALANCE,GAP-04;GAP-17
+2,Assessment Reissued,APPLICATION,S6,6. Interview & Assessment,14,14,0.2,1.0,15.7,1.12,EXPIRY_REWORK,GAP-10

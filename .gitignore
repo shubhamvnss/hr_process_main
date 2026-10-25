@@ -1,0 +1,20 @@
+# macOS
+.DS_Store
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.env
+
+# Node / frontend build
+node_modules/
+dist/
+
+# Local agent output (regenerate with root_cause_agent.py)
+ta_root_causes.json
+evidence.json
+.env
+.env

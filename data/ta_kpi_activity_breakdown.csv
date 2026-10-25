@@ -1,0 +1,89 @@
+run_id,activity_name,stage_code,activity_stage,actor_persona,source_system,events,cases,cases_touched_pct,avg_duration_min,avg_waiting_min,total_waiting_days,repeat_event_pct,sla_breach_pct,avg_sla_overrun_days,exception_rate_pct,rework_share_pct,manual_pct,handoff_pct,top_waiting_reason,wait_is_container,waiting_rank,effort_rank
+2,Interview Conducted,S6,6. Interview & Assessment,Interview Panel,Applicant Tracking System,5788,2610,30.9,82.5,863.1,9795.3,54.9,,,0.0,0.0,0.0,100.0,,N,1.0,1.0
+2,Resume Screening Completed,S5,5. Screening & Shortlisting,Recruiter,Applicant Tracking System,7168,7168,85.0,16.4,633.6,8904.5,0.0,6.7,0.85,0.0,0.0,100.0,100.0,SCREENING_QUEUE,N,2.0,2.0
+2,Interview Confirmed,S6,6. Interview & Assessment,Recruiting Coordinator,Calendar / Scheduling Platform,7355,2662,31.6,,574.2,8281.3,63.8,35.2,3.19,0.0,0.0,0.0,86.6,CANDIDATE_UNAVAILABLE,N,3.0,5.0
+2,Shortlist Review Decision Recorded,S5,5. Screening & Shortlisting,Hiring Manager,Applicant Tracking System,3850,3850,45.6,,742.9,5608.2,0.0,20.7,2.23,0.0,0.0,100.0,100.0,HM_REVIEW_PENDING,N,4.0,5.0
+2,Interview Feedback Submitted,S6,6. Interview & Assessment,Interview Panel,Applicant Tracking System,6215,2610,30.9,,438.2,5339.7,58.0,18.8,1.54,0.0,0.0,100.0,17.2,FEEDBACK_PENDING,N,5.0,5.0
+2,Background Verification Cleared,S9,9. Pre-joining & Closure,HR Operations,Background Verification Platform,991,991,11.7,,1847.7,3590.4,0.0,21.6,4.56,0.0,0.0,0.0,50.3,VERIFICATION_PENDING,N,6.0,5.0
+2,Additional Profiles Requested,S4,4. Sourcing,Hiring Manager,Applicant Tracking System,196,167,2.0,,7164.1,2753.3,14.8,,,0.0,100.0,100.0,86.2,,N,7.0,5.0
+2,Selection Decision Recorded,S7,7. Selection & Decision,Hiring Manager,Applicant Tracking System,1699,1614,19.1,,787.0,2621.7,5.0,27.4,2.27,0.0,0.0,100.0,95.0,SELECTION_DECISION_PENDING,N,8.0,5.0
+2,Interview Requested,S6,6. Interview & Assessment,Recruiter,Applicant Tracking System,5998,2699,32.0,,220.3,2591.1,55.0,,,0.0,0.0,0.0,100.0,,N,9.0,5.0
+2,Pre-joining Documents Received,S9,9. Pre-joining & Closure,Candidate,HR Onboarding,1050,1050,12.4,,1226.5,2525.1,0.0,20.4,3.29,0.0,0.0,100.0,100.0,DOCUMENTS_PENDING,N,10.0,5.0
+2,Shortlist Review Reminder Sent,S5,5. Screening & Shortlisting,Recruiter,Applicant Tracking System,1050,737,8.7,,1166.9,2402.4,29.8,,,0.0,0.0,100.0,0.0,HM_REVIEW_PENDING,N,11.0,5.0
+2,Candidate Rejected,S5,5. Screening & Shortlisting,Recruiter,Applicant Tracking System,5326,5326,63.1,,221.9,2316.8,0.0,,,0.0,0.0,100.0,40.3,,N,12.0,5.0
+2,Offer Accepted,S8,8. Offer Management,Candidate,E-signature Platform,1070,1070,12.7,,1087.8,2282.3,0.0,33.6,2.57,0.0,0.0,0.0,64.3,CANDIDATE_RESPONSE_PENDING,N,13.0,5.0
+2,Assessment Completed,S6,6. Interview & Assessment,Candidate,Assessment Platform,1065,1065,12.6,98.3,1065.0,2224.0,0.0,28.2,3.49,0.0,0.0,0.0,100.0,ASSESSMENT_PENDING,N,14.0,3.0
+2,Interview Scheduling Follow-up,S6,6. Interview & Assessment,Recruiting Coordinator,Calendar / Scheduling Platform,1395,868,10.3,,776.3,2123.3,37.8,,,0.0,0.0,100.0,72.9,PANEL_UNAVAILABLE,N,15.0,5.0
+2,Interview Rescheduled,S6,6. Interview & Assessment,Interview Panel,Calendar / Scheduling Platform,1265,880,10.4,,850.4,2109.3,30.4,,,0.0,100.0,100.0,100.0,CANDIDATE_UNAVAILABLE,N,16.0,5.0
+2,Offer Follow-up Logged,S8,8. Offer Management,Recruiter,Applicant Tracking System,890,665,7.9,,1152.9,2011.9,25.3,,,0.0,0.0,100.0,57.2,CANDIDATE_RESPONSE_PENDING,N,17.0,5.0
+2,Shortlist Submitted to Hiring Manager,S5,5. Screening & Shortlisting,Recruiter,Applicant Tracking System,3988,3988,47.3,,248.1,1940.2,0.0,,,0.0,0.0,0.0,0.0,,N,18.0,5.0
+2,Assessment Reminder Sent,S6,6. Interview & Assessment,Assessment Coordinator,Assessment Platform,798,494,5.9,,1231.5,1926.9,38.1,,,0.0,0.0,100.0,0.0,ASSESSMENT_PENDING,N,19.0,5.0
+2,Offer Approved,S8,8. Offer Management,Compensation Approver,Compensation / Offer Management,1280,1280,15.2,,724.3,1817.9,0.0,36.7,2.38,0.0,0.0,0.0,100.0,COMP_APPROVAL_PENDING,N,20.0,5.0
+2,Requisition Approved,S2,2. Requisition & Approval,Approving Business Leader,Applicant Tracking System,1138,1138,13.5,,749.8,1673.1,0.0,31.2,4.06,0.0,0.0,0.0,100.0,PENDING_APPROVAL,N,21.0,5.0
+2,Compensation Proposal Created,S8,8. Offer Management,Compensation Analyst,Compensation / Offer Management,1314,1314,15.6,,562.5,1449.3,0.0,,,0.0,0.0,0.0,100.0,,N,22.0,5.0
+2,Workforce Budget Validated,S1,1. Hiring Demand,Workforce Planning Analyst,HRIS / Workforce Planning,1165,1165,13.8,,613.0,1400.3,0.0,31.4,3.07,0.0,0.0,0.0,26.6,PENDING_BUDGET_VALIDATION,N,23.0,5.0
+2,Candidate Did Not Join,S9,9. Pre-joining & Closure,HR Operations,HRIS / Workforce Planning,57,57,0.7,,12308.8,1375.7,0.0,,,100.0,0.0,100.0,0.0,NOTICE_PERIOD,N,24.0,5.0
+2,Joining Readiness Confirmed,S9,9. Pre-joining & Closure,HR Operations,HR Onboarding,970,970,11.5,,709.7,1349.8,0.0,,,0.0,0.0,0.0,39.4,,N,25.0,5.0
+2,Interview Feedback Reminder Sent,S6,6. Interview & Assessment,Recruiting Coordinator,Applicant Tracking System,824,568,6.7,,762.5,1231.9,31.1,,,0.0,0.0,100.0,77.3,FEEDBACK_PENDING,N,26.0,5.0
+2,Job Posted / Sourcing Launched,S4,4. Sourcing,Sourcer,Job Board / Sourcing Platform,1164,1164,13.8,,510.3,1164.6,0.0,29.6,1.87,0.0,0.0,0.0,100.0,SOURCING_IN_PROGRESS,N,27.0,5.0
+2,Job Description Finalized,S3,3. Recruitment Initiation,Recruiter,Applicant Tracking System,1164,1164,13.8,,477.2,1089.1,0.0,9.0,0.66,0.0,0.0,0.0,100.0,JD_REVIEW_PENDING,N,28.0,5.0
+2,Workforce Budget Validation Reminder Sent,S1,1. Hiring Demand,TA Operations Coordinator,HRIS / Workforce Planning,653,319,3.8,,849.5,1087.6,51.1,,,0.0,0.0,100.0,48.9,PENDING_BUDGET_VALIDATION,N,29.0,5.0
+2,Recruiter Assigned,S3,3. Recruitment Initiation,TA Operations Coordinator,Applicant Tracking System,1164,1164,13.8,,454.7,1037.7,0.0,14.1,7.32,0.0,0.0,100.0,94.8,RECRUITER_UNASSIGNED,N,30.0,5.0
+2,Requisition Approval Reminder Sent,S2,2. Requisition & Approval,TA Operations Coordinator,Applicant Tracking System,448,269,3.2,,1180.6,1037.0,40.0,,,0.0,0.0,100.0,67.4,PENDING_APPROVAL,N,31.0,5.0
+2,Requisition Reopened,S2,2. Requisition & Approval,TA Operations Coordinator,Applicant Tracking System,57,57,0.7,,9221.5,1030.6,0.0,,,0.0,100.0,100.0,100.0,,N,32.0,5.0
+2,Candidate Shortlisted,S5,5. Screening & Shortlisting,Recruiter,Applicant Tracking System,3990,3990,47.3,,127.7,998.8,0.0,,,0.0,0.0,0.0,0.0,,N,33.0,5.0
+2,Selection Decision Reminder Sent,S7,7. Selection & Decision,Recruiter,Applicant Tracking System,435,330,3.9,,1139.9,972.3,24.1,,,0.0,0.0,100.0,75.9,SELECTION_DECISION_PENDING,N,34.0,5.0
+2,Requisition Created,S2,2. Requisition & Approval,Hiring Manager,Applicant Tracking System,1200,1200,14.2,,409.6,963.8,0.0,,,0.0,0.0,100.0,100.0,,N,35.0,5.0
+2,Pre-joining Documents Requested,S9,9. Pre-joining & Closure,HR Operations,HR Onboarding,1069,1069,12.7,,384.0,804.9,0.0,,,0.0,0.0,0.0,40.1,,N,36.0,5.0
+2,Assessment Assigned,S6,6. Interview & Assessment,Assessment Coordinator,Assessment Platform,1125,1125,13.3,,317.3,699.8,0.0,,,0.0,0.0,0.0,100.0,,N,37.0,5.0
+2,Requisition Submitted for Approval,S2,2. Requisition & Approval,Hiring Manager,Applicant Tracking System,1200,1200,14.2,,285.3,671.3,0.0,,,0.0,0.0,100.0,0.0,,N,38.0,5.0
+2,Background Verification Initiated,S9,9. Pre-joining & Closure,HR Operations,Background Verification Platform,1046,1046,12.4,,313.5,642.9,0.0,,,0.0,0.0,0.0,63.8,,N,39.0,5.0
+2,Offer Viewed by Candidate,S8,8. Offer Management,Candidate,E-signature Platform,1151,1151,13.6,,282.5,637.5,0.0,,,0.0,0.0,0.0,100.0,,N,40.0,5.0
+2,Offer Approval Requested,S8,8. Offer Management,Compensation Analyst,Compensation / Offer Management,1534,1282,15.2,,207.4,624.0,16.4,,,0.0,0.0,0.0,0.0,,N,41.0,5.0
+2,Offer Revised and Resent,S8,8. Offer Management,Recruiter,E-signature Platform,226,208,2.5,,1351.9,599.1,8.0,,,0.0,100.0,100.0,100.0,,N,42.0,5.0
+2,Verification Information Requested,S9,9. Pre-joining & Closure,HR Operations,Background Verification Platform,401,319,3.8,,730.3,574.2,20.4,,,0.0,0.0,100.0,22.7,VERIFICATION_PENDING,N,43.0,5.0
+2,Job Description Revised,S3,3. Recruitment Initiation,Recruiter,Applicant Tracking System,412,211,2.5,,667.1,538.9,48.8,,,0.0,100.0,100.0,0.0,JD_REVIEW_PENDING,N,44.0,5.0
+2,Document Resubmission Requested,S9,9. Pre-joining & Closure,HR Operations,HR Onboarding,356,283,3.4,,753.3,525.8,20.5,,,0.0,100.0,100.0,1.1,DOCUMENTS_PENDING,N,45.0,5.0
+2,Workforce Budget Validation Requested,S1,1. Hiring Demand,Workforce Planning Analyst,HRIS / Workforce Planning,1200,1200,14.2,,222.0,522.3,0.0,,,0.0,0.0,0.0,100.0,,N,46.0,5.0
+2,Hiring Demand Resubmitted,S1,1. Hiring Demand,Business Manager,HRIS / Workforce Planning,249,147,1.7,,1030.5,503.1,41.0,,,0.0,100.0,100.0,100.0,,N,47.0,5.0
+2,Candidate Withdrew,S7,7. Selection & Decision,Candidate,Applicant Tracking System,346,346,4.1,,721.0,489.1,0.0,,,100.0,0.0,100.0,91.6,,N,48.0,5.0
+2,Interview No-Show Recorded,S6,6. Interview & Assessment,Interview Panel,Applicant Tracking System,278,276,3.3,,869.6,474.0,0.7,,,100.0,0.0,100.0,100.0,,N,49.0,5.0
+2,Sourcing Campaign Extended,S4,4. Sourcing,Sourcer,Job Board / Sourcing Platform,237,182,2.2,,945.9,439.5,23.2,,,0.0,100.0,100.0,11.8,,N,50.0,5.0
+2,Offer Sent to Candidate,S8,8. Offer Management,Recruiter,E-signature Platform,1535,1309,15.5,,144.1,433.9,14.7,32.8,3.0,0.0,0.0,0.0,85.3,COMP_APPROVAL_PENDING,N,51.0,5.0
+2,Offer Negotiation Requested,S8,8. Offer Management,Candidate,Compensation / Offer Management,227,209,2.5,,959.7,427.2,7.9,,,0.0,100.0,100.0,20.3,CANDIDATE_RESPONSE_PENDING,N,52.0,5.0
+2,Offer Approval Reminder Sent,S8,8. Offer Management,Recruiter,Compensation / Offer Management,206,178,2.1,,1044.6,421.9,13.6,,,0.0,0.0,100.0,90.8,COMP_APPROVAL_PENDING,N,53.0,5.0
+2,Offer Declined,S8,8. Offer Management,Candidate,E-signature Platform,196,196,2.3,,1071.6,411.8,0.0,28.6,2.11,100.0,0.0,0.0,61.7,CANDIDATE_RESPONSE_PENDING,N,54.0,5.0
+2,Offer Generated,S8,8. Offer Management,HR Operations,E-signature Platform,1310,1310,15.5,,157.4,404.3,0.0,,,0.0,0.0,0.0,100.0,,N,55.0,5.0
+2,Offer Approval Returned for Revision,S8,8. Offer Management,Compensation Approver,Compensation / Offer Management,252,224,2.7,,758.6,374.8,11.1,,,0.0,100.0,100.0,100.0,COMP_APPROVAL_PENDING,N,56.0,5.0
+2,Application Rescreened,S5,5. Screening & Shortlisting,Recruiter,Applicant Tracking System,400,400,4.7,16.3,474.6,372.2,0.0,,,0.0,100.0,100.0,0.0,,N,57.0,4.0
+2,Requisition Resubmitted,S2,2. Requisition & Approval,Hiring Manager,Applicant Tracking System,196,125,1.5,,967.6,371.8,36.2,,,0.0,100.0,100.0,100.0,,N,58.0,5.0
+2,Compensation Proposal Revised,S8,8. Offer Management,Compensation Analyst,Compensation / Offer Management,252,224,2.7,,744.0,367.6,11.1,,,0.0,100.0,100.0,100.0,,N,59.0,5.0
+2,Interview Feedback Returned for Completion,S6,6. Interview & Assessment,Recruiter,Applicant Tracking System,430,401,4.8,,426.0,359.2,6.7,,,0.0,100.0,100.0,100.0,,N,60.0,5.0
+2,Hiring Demand Returned for Clarification,S1,1. Hiring Demand,Workforce Planning Analyst,HRIS / Workforce Planning,249,147,1.7,,708.4,345.9,41.0,,,0.0,100.0,100.0,100.0,,N,61.0,5.0
+2,Screening Follow-up Logged,S5,5. Screening & Shortlisting,TA Operations Coordinator,Applicant Tracking System,153,149,1.8,,1108.1,332.4,2.6,,,0.0,0.0,100.0,97.4,SCREENING_QUEUE,N,62.0,5.0
+2,Requisition Returned for Clarification,S2,2. Requisition & Approval,Approving Business Leader,Applicant Tracking System,196,125,1.5,,809.2,311.0,36.2,,,0.0,100.0,100.0,100.0,PENDING_APPROVAL,N,63.0,5.0
+2,Recruitment Agency Engaged,S4,4. Sourcing,Sourcer,Job Board / Sourcing Platform,176,176,2.1,,760.8,262.5,0.0,,,0.0,0.0,100.0,0.0,,N,64.0,5.0
+2,Additional Interview Round Requested,S7,7. Selection & Decision,Hiring Manager,Applicant Tracking System,147,147,1.7,,897.6,258.7,0.0,,,0.0,100.0,100.0,100.0,,N,65.0,5.0
+2,Manual Status Re-entry,S0,Cross-stage (System / Governance),TA Operations Coordinator,Applicant Tracking System,176,172,2.0,,598.4,206.5,2.3,,,100.0,100.0,100.0,100.0,SYSTEM_SYNC_FAILURE,N,66.0,5.0
+2,Integration Sync Retried,S0,Cross-stage (System / Governance),System / Integration,Integration / Audit Logs,760,351,4.2,,127.4,189.8,53.8,,,100.0,100.0,0.0,0.0,SYSTEM_SYNC_FAILURE,N,67.0,5.0
+2,Selection Decision Reopened,S7,7. Selection & Decision,Hiring Manager,Applicant Tracking System,85,85,1.0,,1124.5,187.4,0.0,,,100.0,100.0,100.0,0.0,,N,68.0,5.0
+2,Verification Exception Raised,S9,9. Pre-joining & Closure,HR Operations,Background Verification Platform,62,62,0.7,,1339.1,162.8,0.0,,,100.0,0.0,100.0,53.2,VERIFICATION_PENDING,N,69.0,5.0
+2,Requisition Put On Hold,S2,2. Requisition & Approval,Approving Business Leader,Applicant Tracking System,57,57,0.7,,1290.2,144.2,0.0,,,100.0,0.0,100.0,5.3,,N,70.0,5.0
+2,Integration Sync Completed,S0,Cross-stage (System / Governance),System / Integration,Integration / Audit Logs,371,350,4.1,,163.7,119.1,5.7,96.0,1.02,0.0,0.0,0.0,47.4,,N,71.0,5.0
+2,Assessment Expired,S6,6. Interview & Assessment,System / Integration,Assessment Platform,25,25,0.3,,2046.5,100.3,0.0,,,100.0,0.0,0.0,100.0,ASSESSMENT_PENDING,N,72.0,5.0
+2,Assessment Result Synchronized,S6,6. Interview & Assessment,System / Integration,Assessment Platform,1065,1065,12.6,,46.7,97.5,0.0,,,0.0,0.0,0.0,100.0,,N,73.0,5.0
+2,Recruiter Assignment Follow-up,S3,3. Recruitment Initiation,Hiring Manager,Applicant Tracking System,67,63,0.7,,657.3,86.3,6.0,,,0.0,0.0,100.0,92.5,RECRUITER_UNASSIGNED,N,74.0,5.0
+2,Offer Expired,S8,8. Offer Management,System / Integration,E-signature Platform,31,31,0.4,,1083.3,65.8,0.0,,,100.0,0.0,0.0,100.0,CANDIDATE_RESPONSE_PENDING,N,75.0,5.0
+2,Requisition Rejected,S2,2. Requisition & Approval,Approving Business Leader,Applicant Tracking System,36,36,0.4,,707.6,50.0,0.0,,,100.0,0.0,0.0,100.0,PENDING_APPROVAL,N,76.0,5.0
+2,Recruiter Reassigned,S3,3. Recruitment Initiation,TA Operations Coordinator,Applicant Tracking System,4,4,0.0,,2603.0,20.4,0.0,,,100.0,100.0,100.0,0.0,,N,77.0,5.0
+2,Assessment Reissued,S6,6. Interview & Assessment,Assessment Coordinator,Assessment Platform,14,14,0.2,,571.1,15.7,0.0,,,0.0,100.0,100.0,100.0,,N,78.0,5.0
+2,Duplicate Status Update Detected,S0,Cross-stage (System / Governance),System / Integration,Integration / Audit Logs,79,79,0.9,,78.8,12.2,0.0,,,100.0,0.0,0.0,0.0,,N,79.0,5.0
+2,Integration Sync Failed,S0,Cross-stage (System / Governance),System / Integration,Integration / Audit Logs,373,352,4.2,,13.3,9.8,5.6,,,100.0,0.0,0.0,48.8,SYSTEM_SYNC_FAILURE,N,80.0,5.0
+2,Policy Exception Documented,S0,Cross-stage (System / Governance),Approving Business Leader,Applicant Tracking System,20,19,0.2,,249.8,9.8,5.0,,,100.0,0.0,100.0,100.0,,N,80.0,5.0
+2,Application Received,S5,5. Screening & Shortlisting,System / Integration,Applicant Tracking System,7235,7235,85.8,,,0.0,0.0,,,0.0,0.0,0.0,0.0,,N,82.0,5.0
+2,Hiring Demand Identified,S1,1. Hiring Demand,Business Manager,HRIS / Workforce Planning,1200,1200,14.2,,,0.0,0.0,,,0.0,0.0,100.0,0.0,,N,82.0,5.0
+2,Requisition Filled,S9,9. Pre-joining & Closure,Recruiter,Applicant Tracking System,757,757,9.0,,41296.8,61297.4,0.0,,,0.0,0.0,0.0,100.0,,Y,,
+2,Candidate Joined,S9,9. Pre-joining & Closure,HR Operations,HRIS / Workforce Planning,817,817,9.7,,14748.9,23627.1,0.0,,,0.0,0.0,0.0,0.0,NOTICE_PERIOD,Y,,
+2,Requisition Cancelled,S9,9. Pre-joining & Closure,Hiring Manager,Applicant Tracking System,177,177,2.1,,11774.3,4086.4,0.0,,,100.0,0.0,100.0,87.0,,Y,,
+2,Requisition Closed Without Hire,S9,9. Pre-joining & Closure,Recruiter,Applicant Tracking System,86,86,1.0,,21462.3,3619.1,0.0,,,100.0,0.0,100.0,100.0,,Y,,
+2,Application Closed,S9,9. Pre-joining & Closure,Recruiter,Applicant Tracking System,6254,6254,74.1,,219.5,2691.6,0.0,,,0.0,0.0,100.0,13.9,,Y,,

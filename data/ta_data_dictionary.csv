@@ -1,0 +1,48 @@
+table_name,field,type,definition
+ta_event_log,event_id,String,Unique event record ID generated during event-log construction
+ta_event_log,process_instance_id,String,"Case ID: requisition_id for the requisition log, application_id for the application log"
+ta_event_log,case_type,Enum,REQUISITION or APPLICATION
+ta_event_log,requisition_id,String,Stable link to the hiring requirement; present on every row (primary lifecycle perspective)
+ta_event_log,application_id,String / nullable,Candidate-application key; empty for requisition-only events
+ta_event_log,candidate_surrogate_id,String / nullable,Pseudonymous candidate reference; no direct identifiers are generated
+ta_event_log,activity_name,String,Canonical activity name from ta_activity_master
+ta_event_log,activity_stage,Enum,"One of the nine recruitment stages, or the cross-stage system/governance bucket"
+ta_event_log,stage_code,Enum,"S1..S9, or S0 for cross-stage system/governance events"
+ta_event_log,event_timestamp,Datetime,Canonical event time (documented canonical timezone; business calendar IN-STD-09:00-17:30-MONFRI)
+ta_event_log,event_end_timestamp,Datetime / nullable,End time only where a reliable duration exists; never inferred from the next event
+ta_event_log,actor_id_pseudonymous,String / nullable,Pseudonymous actor identifier
+ta_event_log,actor_persona,Enum,Responsible stakeholder group for the event
+ta_event_log,source_system,String,One authoritative source system per activity
+ta_event_log,source_event_id,String,Source-system audit/event identifier
+ta_event_log,status_before,String,Case status before the event
+ta_event_log,status_after,String,Case status after the event
+ta_event_log,outcome_code,String / nullable,"Approved, rejected, selected, withdrawn, declined, joined, cancelled, etc."
+ta_event_log,reason_code,String / nullable,"Standardized reason for rejection, withdrawal, cancellation or rework"
+ta_event_log,duration_minutes,Number / nullable,Observed activity duration; populated only where a reliable start/end exists
+ta_event_log,waiting_time_minutes,Number / nullable,"Business minutes since the previous event in the same case (milestone-to-milestone elapsed time, not active-time subtraction)"
+ta_event_log,waiting_reason_code,String / nullable,Recorded waiting reason; intentionally empty when the source does not record one
+ta_event_log,sla_code,String / nullable,SLA definition closed by this event (see ta_sla_definitions)
+ta_event_log,sla_target_minutes,Number / nullable,Applicable SLA target for this interval at this case priority
+ta_event_log,sla_measured_minutes,Number / nullable,Measured business minutes for the SLA interval
+ta_event_log,sla_breach_flag,Boolean,Y when the measured duration exceeds the applicable SLA
+ta_event_log,sla_overrun_minutes,Number / nullable,Minutes beyond the SLA target
+ta_event_log,rework_flag,Boolean,"Y when the activity is a repeat, return or corrective execution"
+ta_event_log,repeat_sequence_number,Number,Nth occurrence of this activity within the case
+ta_event_log,manual_touch_flag,Boolean,Y when a human manual action is evidenced; not assumed for every human-owned event
+ta_event_log,handoff_flag,Boolean,Y when responsibility moves between personas
+ta_event_log,exception_flag,Boolean,"Y when the event represents an exception, failure or deviation"
+ta_event_log,gap_reference,String / nullable,Intentionally EMPTY in this dataset - gaps are derived by deterministic rules into ta_gap_detection.csv
+ta_event_log,data_quality_flag,Boolean,Y when the event fails a defined quality check (e.g. duplicate payload)
+ta_event_log,extraction_batch_id,String,Lineage to the source extraction batch
+ta_requisition_master,requisition_outcome,Enum,"Filled, Cancelled, Closed Without Hire, Rejected at Approval, On Hold, Open / In Progress"
+ta_requisition_master,is_open_censored,Boolean,Y when the case is right-censored at the reporting cut-off and must not be treated as completed
+ta_requisition_master,recruiter_weighted_load_at_assignment,Number,Recruiter's weighted open-requisition load at the moment of assignment (priority x complexity)
+ta_requisition_master,time_to_fill_business_days,Number / nullable,"Approved requisition to first joining, in business days (T1-01 numerator)"
+ta_application_master,application_outcome,Enum,"Joined, Accepted - Did Not Join, Offer Declined, Offer Expired, Withdrawn, Rejected - <stage>, No Show, Closed - Requisition Cancelled, In Progress"
+ta_application_master,candidate_engagement_profile,Enum,resilient / normal / impatient - synthetic design attribute that keeps counterexamples in the data
+ta_application_master,max_inactivity_business_days,Number,Longest gap between consecutive events in the case
+ta_stage_transitions,elapsed_business_minutes,Number,"Stage entry to next-stage entry, on the business calendar (T2-02)"
+ta_recruiter_load_snapshot,weighted_load,Number,Sum of priority x complexity weights of requisitions open for that recruiter on the snapshot date (T2-22)
+ta_gap_detection,detection_rule,String,"The deterministic rule that fired, expressed against event evidence and the SLA policy"
+ta_gap_detection,evidence_event_ids,String,Pipe-separated event_id values that support the finding
+ta_scenario_ground_truth,gt_*,Mixed,Generator intent. For validating the detector only - never an analytical input

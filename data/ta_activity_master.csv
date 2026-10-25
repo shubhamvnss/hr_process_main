@@ -1,0 +1,91 @@
+activity_name,stage_code,activity_stage,stage_sequence,primary_source_system,primary_persona,manual_touch_by_default,rework_activity,exception_activity,closes_sla_codes,description
+Hiring Demand Identified,S1,1. Hiring Demand,1,HRIS / Workforce Planning,Business Manager,Y,N,N,,Business need or replacement need is raised
+Hiring Demand Returned for Clarification,S1,1. Hiring Demand,1,HRIS / Workforce Planning,Workforce Planning Analyst,Y,Y,N,,"Demand returned for missing grade, location, budget or justification"
+Hiring Demand Resubmitted,S1,1. Hiring Demand,1,HRIS / Workforce Planning,Business Manager,Y,Y,N,,Business manager resubmits corrected demand
+Workforce Budget Validation Requested,S1,1. Hiring Demand,1,HRIS / Workforce Planning,Workforce Planning Analyst,N,N,N,,"Headcount plan, budget and position availability validation requested"
+Workforce Budget Validation Reminder Sent,S1,1. Hiring Demand,1,HRIS / Workforce Planning,TA Operations Coordinator,Y,N,N,,Manual follow-up on pending budget validation
+Workforce Budget Validated,S1,1. Hiring Demand,1,HRIS / Workforce Planning,Workforce Planning Analyst,N,N,N,SLA-01,Headcount and budget confirmed available
+Workforce Budget Validation Rejected,S1,1. Hiring Demand,1,HRIS / Workforce Planning,Workforce Planning Analyst,N,N,Y,,Headcount or budget not available
+Requisition Created,S2,2. Requisition & Approval,2,Applicant Tracking System,Hiring Manager,Y,N,N,,"Requisition created with role, grade, location and justification"
+Requisition Submitted for Approval,S2,2. Requisition & Approval,2,Applicant Tracking System,Hiring Manager,Y,N,N,,Requisition submitted into the approval queue
+Requisition Approval Reminder Sent,S2,2. Requisition & Approval,2,Applicant Tracking System,TA Operations Coordinator,Y,N,N,,Manual chase on a pending approval
+Requisition Returned for Clarification,S2,2. Requisition & Approval,2,Applicant Tracking System,Approving Business Leader,Y,Y,N,,Approver returns an incomplete approval packet
+Requisition Resubmitted,S2,2. Requisition & Approval,2,Applicant Tracking System,Hiring Manager,Y,Y,N,,Hiring manager resubmits the corrected requisition
+Requisition Approved,S2,2. Requisition & Approval,2,Applicant Tracking System,Approving Business Leader,N,N,N,SLA-02,Requisition approved by the business leader
+Requisition Rejected,S2,2. Requisition & Approval,2,Applicant Tracking System,Approving Business Leader,N,N,Y,,Requisition rejected
+Requisition Put On Hold,S2,2. Requisition & Approval,2,Applicant Tracking System,Approving Business Leader,Y,N,Y,,Requisition suspended pending business decision
+Requisition Reopened,S2,2. Requisition & Approval,2,Applicant Tracking System,TA Operations Coordinator,Y,Y,N,,Requisition reactivated after hold or failed hire
+Recruiter Assigned,S3,3. Recruitment Initiation,3,Applicant Tracking System,TA Operations Coordinator,Y,N,N,SLA-03,Approved requisition assigned to a recruiter
+Recruiter Reassigned,S3,3. Recruitment Initiation,3,Applicant Tracking System,TA Operations Coordinator,Y,Y,Y,,Requisition moved to another recruiter
+Recruiter Assignment Follow-up,S3,3. Recruitment Initiation,3,Applicant Tracking System,Hiring Manager,Y,N,N,,Hiring manager chases an unassigned approved requisition
+Job Description Finalized,S3,3. Recruitment Initiation,3,Applicant Tracking System,Recruiter,N,N,N,SLA-04,Role profile and selection criteria finalized
+Job Description Revised,S3,3. Recruitment Initiation,3,Applicant Tracking System,Recruiter,Y,Y,N,,Role profile reworked after review or sourcing feedback
+Job Posted / Sourcing Launched,S4,4. Sourcing,4,Job Board / Sourcing Platform,Sourcer,N,N,N,SLA-05,Vacancy published and sourcing campaign launched
+Sourcing Campaign Extended,S4,4. Sourcing,4,Job Board / Sourcing Platform,Sourcer,Y,Y,N,,Campaign extended or re-opened because the pipeline was insufficient
+Recruitment Agency Engaged,S4,4. Sourcing,4,Job Board / Sourcing Platform,Sourcer,Y,N,N,,External agency engaged for a hard-to-fill role
+Additional Profiles Requested,S4,4. Sourcing,4,Applicant Tracking System,Hiring Manager,Y,Y,N,,Hiring manager rejects the shortlist and asks for more profiles
+Application Received,S5,5. Screening & Shortlisting,5,Applicant Tracking System,System / Integration,N,N,N,,Candidate application record created
+Screening Follow-up Logged,S5,5. Screening & Shortlisting,5,Applicant Tracking System,TA Operations Coordinator,Y,N,N,,Manual follow-up on an aged screening queue
+Resume Screening Completed,S5,5. Screening & Shortlisting,5,Applicant Tracking System,Recruiter,Y,N,N,SLA-06,Minimum qualifications reviewed; shortlist or reject
+Application Rescreened,S5,5. Screening & Shortlisting,5,Applicant Tracking System,Recruiter,Y,Y,N,,Application screened again after criteria change or error
+Candidate Shortlisted,S5,5. Screening & Shortlisting,5,Applicant Tracking System,Recruiter,N,N,N,,Candidate meets shortlist criteria
+Shortlist Submitted to Hiring Manager,S5,5. Screening & Shortlisting,5,Applicant Tracking System,Recruiter,N,N,N,,Shortlist handed to the hiring manager for review
+Shortlist Review Reminder Sent,S5,5. Screening & Shortlisting,5,Applicant Tracking System,Recruiter,Y,N,N,,Manual reminder on a pending hiring-manager review
+Shortlist Review Decision Recorded,S5,5. Screening & Shortlisting,5,Applicant Tracking System,Hiring Manager,Y,N,N,SLA-07,"Hiring manager accepts, rejects or asks for more profiles"
+Assessment Assigned,S6,6. Interview & Assessment,6,Assessment Platform,Assessment Coordinator,N,N,N,,"Technical, aptitude or role-specific assessment assigned"
+Assessment Reminder Sent,S6,6. Interview & Assessment,6,Assessment Platform,Assessment Coordinator,Y,N,N,,Reminder on an overdue assessment
+Assessment Completed,S6,6. Interview & Assessment,6,Assessment Platform,Candidate,N,N,N,SLA-10,Candidate completes the assessment
+Assessment Expired,S6,6. Interview & Assessment,6,Assessment Platform,System / Integration,N,N,Y,,Assessment window closed before completion
+Assessment Reissued,S6,6. Interview & Assessment,6,Assessment Platform,Assessment Coordinator,Y,Y,N,,Assessment re-assigned after expiry
+Assessment Result Synchronized,S6,6. Interview & Assessment,6,Assessment Platform,System / Integration,N,N,N,,Assessment result transferred to the ATS
+Interview Requested,S6,6. Interview & Assessment,6,Applicant Tracking System,Recruiter,N,N,N,,Interview round requested for a shortlisted candidate
+Interview Scheduling Follow-up,S6,6. Interview & Assessment,6,Calendar / Scheduling Platform,Recruiting Coordinator,Y,N,N,,Coordinator chases panel or candidate availability
+Interview Confirmed,S6,6. Interview & Assessment,6,Calendar / Scheduling Platform,Recruiting Coordinator,N,N,N,SLA-08,Invite accepted by candidate and panel; slot confirmed
+Interview Rescheduled,S6,6. Interview & Assessment,6,Calendar / Scheduling Platform,Interview Panel,Y,Y,N,,Confirmed slot moved
+Interview Cancelled,S6,6. Interview & Assessment,6,Calendar / Scheduling Platform,Recruiting Coordinator,Y,Y,Y,,Scheduled interview cancelled
+Interview Conducted,S6,6. Interview & Assessment,6,Applicant Tracking System,Interview Panel,N,N,N,,Interview held and attendance recorded
+Interview No-Show Recorded,S6,6. Interview & Assessment,6,Applicant Tracking System,Interview Panel,Y,N,Y,,Candidate or panel did not attend
+Interview Feedback Reminder Sent,S6,6. Interview & Assessment,6,Applicant Tracking System,Recruiting Coordinator,Y,N,N,,Reminder on outstanding interview feedback
+Interview Feedback Submitted,S6,6. Interview & Assessment,6,Applicant Tracking System,Interview Panel,Y,N,N,SLA-09,Structured feedback and recommendation submitted
+Interview Feedback Returned for Completion,S6,6. Interview & Assessment,6,Applicant Tracking System,Recruiter,Y,Y,N,,Feedback returned because required fields were missing
+Additional Interview Round Requested,S7,7. Selection & Decision,7,Applicant Tracking System,Hiring Manager,Y,Y,N,,Hiring manager requests a further interview round
+Selection Decision Recorded,S7,7. Selection & Decision,7,Applicant Tracking System,Hiring Manager,Y,N,N,SLA-11,Interview results consolidated and decision recorded
+Selection Decision Reopened,S7,7. Selection & Decision,7,Applicant Tracking System,Hiring Manager,Y,Y,Y,,A recorded selection decision is reopened
+Selection Decision Reminder Sent,S7,7. Selection & Decision,7,Applicant Tracking System,Recruiter,Y,N,N,,Reminder on a pending selection decision
+Candidate Rejected,S7,7. Selection & Decision,7,Applicant Tracking System,Recruiter,Y,N,N,,Candidate rejected with a reason code
+Candidate Withdrew,S7,7. Selection & Decision,7,Applicant Tracking System,Candidate,Y,N,Y,,Candidate withdraws from the process
+Compensation Proposal Created,S8,8. Offer Management,8,Compensation / Offer Management,Compensation Analyst,N,N,N,,Compensation proposal prepared against band and expectations
+Compensation Proposal Revised,S8,8. Offer Management,8,Compensation / Offer Management,Compensation Analyst,Y,Y,N,,Compensation proposal revised
+Offer Approval Requested,S8,8. Offer Management,8,Compensation / Offer Management,Compensation Analyst,N,N,N,,Compensation and business approvals requested
+Offer Approval Reminder Sent,S8,8. Offer Management,8,Compensation / Offer Management,Recruiter,Y,N,N,,Reminder on a pending offer approval
+Offer Approval Returned for Revision,S8,8. Offer Management,8,Compensation / Offer Management,Compensation Approver,Y,Y,N,,Approver returns the proposal for rework
+Offer Approved,S8,8. Offer Management,8,Compensation / Offer Management,Compensation Approver,N,N,N,SLA-12,Compensation and business approval granted
+Offer Generated,S8,8. Offer Management,8,E-signature Platform,HR Operations,N,N,N,,Offer document generated
+Offer Sent to Candidate,S8,8. Offer Management,8,E-signature Platform,Recruiter,N,N,N,SLA-13,Offer released to the candidate with a response due date
+Offer Viewed by Candidate,S8,8. Offer Management,8,E-signature Platform,Candidate,N,N,N,,Candidate opened the offer document
+Offer Follow-up Logged,S8,8. Offer Management,8,Applicant Tracking System,Recruiter,Y,N,N,,Recruiter chases an outstanding offer response
+Offer Negotiation Requested,S8,8. Offer Management,8,Compensation / Offer Management,Candidate,Y,Y,N,,Candidate requests a change to the offer
+Offer Revised and Resent,S8,8. Offer Management,8,E-signature Platform,Recruiter,Y,Y,N,,Revised offer version issued
+Offer Accepted,S8,8. Offer Management,8,E-signature Platform,Candidate,N,N,N,SLA-14,Candidate accepts the offer
+Offer Declined,S8,8. Offer Management,8,E-signature Platform,Candidate,N,N,Y,,Candidate declines the offer
+Offer Expired,S8,8. Offer Management,8,E-signature Platform,System / Integration,N,N,Y,,Offer lapsed without a response
+Background Verification Initiated,S9,9. Pre-joining & Closure,9,Background Verification Platform,HR Operations,N,N,N,,Background and eligibility checks initiated
+Verification Information Requested,S9,9. Pre-joining & Closure,9,Background Verification Platform,HR Operations,Y,N,N,,Additional information requested from the candidate or vendor
+Verification Exception Raised,S9,9. Pre-joining & Closure,9,Background Verification Platform,HR Operations,Y,N,Y,,Discrepancy or unresolved check raised as an exception
+Background Verification Cleared,S9,9. Pre-joining & Closure,9,Background Verification Platform,HR Operations,N,N,N,SLA-15,All required checks cleared
+Pre-joining Documents Requested,S9,9. Pre-joining & Closure,9,HR Onboarding,HR Operations,N,N,N,,Joining document checklist issued
+Pre-joining Documents Received,S9,9. Pre-joining & Closure,9,HR Onboarding,Candidate,Y,N,N,SLA-16,Candidate submits the required documents
+Document Resubmission Requested,S9,9. Pre-joining & Closure,9,HR Onboarding,HR Operations,Y,Y,N,,Documents incomplete or invalid; resubmission requested
+Joining Readiness Confirmed,S9,9. Pre-joining & Closure,9,HR Onboarding,HR Operations,N,N,N,,Pre-joining steps complete and joining date confirmed
+Candidate Joined,S9,9. Pre-joining & Closure,9,HRIS / Workforce Planning,HR Operations,N,N,N,,Joining recorded and employee record created
+Candidate Did Not Join,S9,9. Pre-joining & Closure,9,HRIS / Workforce Planning,HR Operations,Y,N,Y,,Accepted offer did not convert to a joining
+Application Closed,S9,9. Pre-joining & Closure,9,Applicant Tracking System,Recruiter,Y,N,N,,Unsuccessful or cancelled application closed with a reason code
+Requisition Filled,S9,9. Pre-joining & Closure,9,Applicant Tracking System,Recruiter,N,N,N,,All positions filled; requisition closed as filled
+Requisition Cancelled,S9,9. Pre-joining & Closure,9,Applicant Tracking System,Hiring Manager,Y,N,Y,,Requisition withdrawn by the business
+Requisition Closed Without Hire,S9,9. Pre-joining & Closure,9,Applicant Tracking System,Recruiter,Y,N,Y,,Requisition closed with no hire made
+Integration Sync Failed,S0,Cross-stage (System / Governance),0,Integration / Audit Logs,System / Integration,N,N,Y,,Cross-system status update failed
+Integration Sync Retried,S0,Cross-stage (System / Governance),0,Integration / Audit Logs,System / Integration,N,Y,Y,,Automatic retry of a failed interface call
+Integration Sync Completed,S0,Cross-stage (System / Governance),0,Integration / Audit Logs,System / Integration,N,N,N,SLA-17,Interface call completed after retry
+Manual Status Re-entry,S0,Cross-stage (System / Governance),0,Applicant Tracking System,TA Operations Coordinator,Y,Y,Y,,Status re-entered manually after a failed sync
+Duplicate Status Update Detected,S0,Cross-stage (System / Governance),0,Integration / Audit Logs,System / Integration,N,N,Y,,Duplicate status update received and reconciled
+Policy Exception Documented,S0,Cross-stage (System / Governance),0,Applicant Tracking System,Approving Business Leader,Y,N,Y,,"Approved deviation from the standard process path, documented"
